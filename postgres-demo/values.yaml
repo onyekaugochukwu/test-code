@@ -1,0 +1,14 @@
+replicaCount: 1
+image:
+  repository: my-postgres-db
+  tag: latest
+  pullPolicy: Never
+
+postgres:
+  user: myuser
+  password: mypassword
+  database: mydb
+
+service:
+  type: ClusterIP
+  port: 5432
