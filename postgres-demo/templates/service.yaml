@@ -8,5 +8,4 @@ spec:
   - port: {{ .Values.service.port }}
     targetPort: 5432
   selector:
-    app: postgres
-    release: {{ .Release.Name }}
+    app: {{ .Release.Name }}-postgres 

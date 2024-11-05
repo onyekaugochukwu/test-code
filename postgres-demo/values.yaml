@@ -12,3 +12,12 @@ postgres:
 service:
   type: ClusterIP
   port: 5432
+
+nameOverride: "postgres-demo-postgres"
+fullnameOverride: "postgres-demo-postgres"
+
+labels:
+  app: postgres-demo-postgres
+
+podLabels:
+  app: postgres-demo-postgres
